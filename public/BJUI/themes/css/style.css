@@ -231,7 +231,7 @@ td[align=right] input{text-align:right;}
 .menu-items li.open .menu-items-children{display:block;}
 .menu-items .menu-items-children > li > a{padding-left:30px;}
 /* Pages */
-.bjui-pageHeader{position:relative; padding:2px 5px;}
+.bjui-pageHeader{position:relative; padding:2px 20px 2px 5px;}
 .bjui-pageHeader:before, .bjui-pageHeader:after{display:table; content:" ";}
 .bjui-pageHeader:after{clear:both;}
 .bjui-pageHeader label, .bjui-pageFooter label{margin-bottom:0;}

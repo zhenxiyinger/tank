@@ -18,6 +18,7 @@ class CreatePermissionTables extends Migration
 
         Schema::create($tableNames['permissions'], function (Blueprint $table) {
             $table->increments('id');
+            $table->string('show');
             $table->string('name');
             $table->string('guard_name');
             $table->timestamps();
@@ -25,6 +26,7 @@ class CreatePermissionTables extends Migration
 
         Schema::create($tableNames['roles'], function (Blueprint $table) {
             $table->increments('id');
+            $table->string('show');
             $table->string('name');
             $table->string('guard_name');
             $table->timestamps();
@@ -77,7 +79,7 @@ class CreatePermissionTables extends Migration
                 ->onDelete('cascade');
 
             $table->primary(['permission_id', 'role_id']);
-            
+
             app('cache')
                 ->store(config('permission.cache.store') != 'default' ? config('permission.cache.store') : null)
                 ->forget(config('permission.cache.key'));
