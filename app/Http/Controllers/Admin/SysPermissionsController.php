@@ -4,17 +4,17 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
-class SysRolesController extends Controller
+class SysPermissionsController extends Controller
 {
     public function index()
     {
-        $dataList = Role::all();
+        $dataList = Permission::all();
         $res = array(
             'dataList' => $dataList
         );
-        return View('admin.sys_roles.index', $res);
+        return View('admin.sys_permissions.index', $res);
     }
 
     public function add(Request $request)
@@ -22,11 +22,11 @@ class SysRolesController extends Controller
         if ($request->method() == 'POST') {
             $data = $request->only(['name', 'show']);
             $data['guard_name'] = 'admin';
-            Role::create($data);
+            Permission::create($data);
 
             return array(200);
         } else {
-            return View('admin.sys_roles.add');
+            return View('admin.sys_permissions.add');
         }
     }
 }

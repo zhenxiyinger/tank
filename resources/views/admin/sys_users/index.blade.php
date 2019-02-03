@@ -18,8 +18,8 @@
             <th>用户名</th>
             <th>姓名</th>
             <th>手机号</th>
-            <th>上次登录</th>
-            <th>状态</th>
+            <th width="200">上次登录</th>
+            <th width="100">状态</th>
             <th align="center" width="120">操作</th>
         </tr>
         </thead>

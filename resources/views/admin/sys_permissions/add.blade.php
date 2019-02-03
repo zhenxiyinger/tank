@@ -8,13 +8,13 @@
             <tbody>
             <tr>
                 <td>
-                    <label for="name" class="control-label x120">角色名称：</label>
+                    <label for="name" class="control-label x120">权限名称：</label>
                     <input type="text" name="name" id="name" value="" data-rule="required" size="15">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="show" class="control-label x120">角色描述：</label>
+                    <label for="show" class="control-label x120">权限标识：</label>
                     <input type="text" name="show" id="show" value="" data-rule="required" size="15">
                 </td>
             </tr>

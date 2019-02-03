@@ -6,7 +6,7 @@
         <input type="hidden" name="orderDirection" value="${param.orderDirection}">
         <div class="bjui-searchBar">
             <div class="pull-right">
-                <button type="button" class="btn btn-blue" data-url="{{ route('admin_sys_roles_add') }}" data-toggle="dialog" data-icon="plus" title="添加" data-width="500" data-height="320" data-mask="true">添加</button>
+                <button type="button" class="btn btn-blue" data-url="{{ route('admin_sys_permissions_add') }}" data-toggle="dialog" data-icon="plus" title="添加" data-width="500" data-height="320" data-mask="true">添加</button>
             </div>
         </div>
     </form>
@@ -15,8 +15,8 @@
     <table class="table table-bordered table-hover table-striped table-top" data-selected-multi="true">
         <thead>
         <tr>
-            <th>角色名称</th>
-            <th>角色描述</th>
+            <th>权限名称</th>
+            <th>权限标识</th>
             <th width="200">创建时间</th>
             <th align="center" width="120">操作</th>
         </tr>

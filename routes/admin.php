@@ -21,4 +21,12 @@ Route::namespace('Admin')->group(function () {
         Route::match(['get', 'post'], 'edit', 'SysRolesController@edit')->name('admin_sys_roles_edit');
         Route::post('del', 'SysRolesController@del')->name('admin_sys_roles_del');
     });
+
+    Route::prefix('sys_permissions')->group(function () {
+        Route::get('index', 'SysPermissionsController@index')->name('admin_sys_permissions_index');
+        Route::match(['get', 'post'], 'add', 'SysPermissionsController@add')->name('admin_sys_permissions_add');
+        Route::match(['get', 'post'], 'edit', 'SysPermissionsController@edit')->name('admin_sys_permissions_edit');
+        Route::post('del', 'SysPermissionsController@del')->name('admin_sys_permissions_del');
+    });
+
 });

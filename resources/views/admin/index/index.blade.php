@@ -205,7 +205,7 @@
                             <ul class="menu-items" data-faicon="hand-o-up">
                                 <li><a href="{{ route('admin_sys_users_index') }}" data-options="{id:'form-input', faicon:'terminal'}">用户管理</a></li>
                                 <li><a href="{{ route('admin_sys_roles_index') }}" data-options="{id:'form-select', faicon:'caret-square-o-down'}">角色管理</a></li>
-                                <li><a href="form-checkbox.html" data-options="{id:'form-checkbox', faicon:'check-square-o'}">权限管理</a></li>
+                                <li><a href="{{ route('admin_sys_permissions_index') }}" data-options="{id:'form-checkbox', faicon:'check-square-o'}">权限管理</a></li>
                             </ul>
                             <ul class="menu-items" data-tit="数据管理" data-faicon="list">
                                 <li><a href="form.html" data-options="{id:'form-demo', faicon:'th-large'}">数据备份</a></li>
